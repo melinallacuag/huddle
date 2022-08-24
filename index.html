@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -10,24 +10,81 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 0;
+      padding: 0;
+      background: hsl(257, 40%, 49%);
+      color: hsl(0, 0%, 100%);
+      font-family: 'Open Sans' , sans-serif;
+      /* background-image: url(images/bg-desktop.svg); */
+      height: 100vh;
+    }
+    .container-huddle{
+      max-width: 1200px;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    row-gap: 1.25rem;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    column-gap: 2.5rem;
+    height: 100vh;
+    }
+    .title-huddle{
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    .description-huddle{
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+    .container-img img{
+      width: 100%;
+    }
+    .container-info{
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+    .img {
+      position: absolute;
+  
+    z-index:-1;
+    margin: 0;
+    }
+    .img img{
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <main>
+    <div class="container-huddle">
+      <div class="img">
+        <img src="images/bg-desktop.svg" alt="">
+      </div>
+      <div class="container-img">
+        <img src="images/illustration-mockups.svg"  alt="">
+      </div>
+      <div class="container-info">
+        <h2 class="title-huddle">
+          Build The Community Your Fans Will Love
+        </h2>
+        <p class="description-huddle">
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion. 
+        </p>
+        <a href="#">
+          Register
+        </a>
+      </div>
+    </div>
+  </main>
   </footer>
 </body>
 </html>
